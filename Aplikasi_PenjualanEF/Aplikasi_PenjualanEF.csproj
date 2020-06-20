@@ -38,7 +38,7 @@
     <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="Dapper, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Dapper.2.0.35\lib\net461\Dapper.dll</HintPath>
+      <HintPath>..\..\Aplikasi Penjualan - Copy\Aplikasi_Penjualan\packages\Dapper.2.0.35\lib\net461\Dapper.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -98,11 +98,11 @@
     <Compile Include="Reports\CetakBarang.Designer.cs">
       <DependentUpon>CetakBarang.cs</DependentUpon>
     </Compile>
-    <Compile Include="Reports\fmTransaksi.cs">
+    <Compile Include="Reports\fmTransaksiCetak.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Reports\fmTransaksi.Designer.cs">
-      <DependentUpon>fmTransaksi.cs</DependentUpon>
+    <Compile Include="Reports\fmTransaksiCetak.Designer.cs">
+      <DependentUpon>fmTransaksiCetak.cs</DependentUpon>
     </Compile>
     <Compile Include="Reports\rptTransaksi.cs">
       <AutoGen>True</AutoGen>
@@ -135,8 +135,8 @@
     <EmbeddedResource Include="Reports\CetakBarang.resx">
       <DependentUpon>CetakBarang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reports\fmTransaksi.resx">
-      <DependentUpon>fmTransaksi.cs</DependentUpon>
+    <EmbeddedResource Include="Reports\fmTransaksiCetak.resx">
+      <DependentUpon>fmTransaksiCetak.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\rptTransaksi.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>

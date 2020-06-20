@@ -30,10 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.penjualanEntityBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.noKwitansiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tglKwitansiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.iDPelangganDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.penjualanEntityBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.btnLoad = new System.Windows.Forms.Button();
             this.btnCetak = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -54,10 +54,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(353, 76);
             this.dataGridView1.TabIndex = 0;
             // 
-            // penjualanEntityBindingSource
-            // 
-            this.penjualanEntityBindingSource.DataSource = typeof(Aplikasi_PenjualanEF.Entities.PenjualanEntity);
-            // 
             // noKwitansiDataGridViewTextBoxColumn
             // 
             this.noKwitansiDataGridViewTextBoxColumn.DataPropertyName = "NoKwitansi";
@@ -75,6 +71,10 @@
             this.iDPelangganDataGridViewTextBoxColumn.DataPropertyName = "IDPelanggan";
             this.iDPelangganDataGridViewTextBoxColumn.HeaderText = "IDPelanggan";
             this.iDPelangganDataGridViewTextBoxColumn.Name = "iDPelangganDataGridViewTextBoxColumn";
+            // 
+            // penjualanEntityBindingSource
+            // 
+            this.penjualanEntityBindingSource.DataSource = typeof(Aplikasi_PenjualanEF.Entities.PenjualanEntity);
             // 
             // btnLoad
             // 
@@ -94,6 +94,7 @@
             this.btnCetak.TabIndex = 2;
             this.btnCetak.Text = "Cetak";
             this.btnCetak.UseVisualStyleBackColor = true;
+            this.btnCetak.Click += new System.EventHandler(this.btnCetak_Click);
             // 
             // fmTransaksi
             // 

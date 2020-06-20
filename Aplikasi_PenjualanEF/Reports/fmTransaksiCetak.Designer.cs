@@ -1,6 +1,6 @@
 ﻿namespace Aplikasi_PenjualanEF.Reports
 {
-    partial class fmTransaksi
+    partial class fmTransaksiCetak
     {
         /// <summary>
         /// Required designer variable.
@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
+            this.rptTransaksi1 = new Aplikasi_PenjualanEF.Reports.rptTransaksi();
             this.SuspendLayout();
             // 
             // crystalReportViewer1
@@ -51,6 +52,7 @@
             this.Controls.Add(this.crystalReportViewer1);
             this.Name = "fmTransaksi";
             this.Text = "fmTransaksi";
+            this.Load += new System.EventHandler(this.fmTransaksi_Load);
             this.ResumeLayout(false);
 
         }
@@ -58,5 +60,6 @@
         #endregion
 
         private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
+        private rptTransaksi rptTransaksi1;
     }
 }
